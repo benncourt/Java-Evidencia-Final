@@ -1,4 +1,5 @@
-<b:base title="Log in">
+
+<b:base title="Log In">
 	<div class="container">
 		<h2 class="form-signin-heading">Please sign in</h2>	
 		<form:form method="post" modelAttribute="loginForm">
@@ -9,7 +10,7 @@
 			<br/>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
 		</form:form>
-		
+		<br/>
 		<div>
 			<c:if test="${not empty loginWarnings }">
 				<c:forEach var="warning" items="${loginWarnings}">

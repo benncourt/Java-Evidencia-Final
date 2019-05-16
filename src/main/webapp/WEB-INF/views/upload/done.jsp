@@ -1,6 +1,7 @@
 
 <b:base title="Upload Complete">
     <div class="container">
+
       <!-- Static navbar -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -27,21 +28,21 @@
       </nav>
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div>
-        <h2>Upload complete</h2>
-        <div>
-          <c:if test="${not empty warnings }">
-            <c:forEach var="warning" items="${warnings }">
-              <div class="alert alert-info" role="alert">${warning}</div>
-            </c:forEach>
-          </c:if>
-          <c:if test="${not empty errors }">
-            <c:forEach var="error" items="${errors }">
-              <div class="alert alert-danger" role="alert">${error}</div>
-            </c:forEach>
-          </c:if>
-        </div>
-      </div>
+	<div>
+		<h2>Upload complete</h2>
+		<div>
+			<c:if test="${not empty warnings }">
+				<c:forEach var="warning" items="${warnings }">
+					<div class="alert alert-info" role="alert">${warning }</div>
+				</c:forEach>
+			</c:if>
+			<c:if test="${not empty errors }">
+				<c:forEach var="error" items="${errors }">
+					<div class="alert alert-danger" role="alert">${error }</div>
+				</c:forEach>
+			</c:if>
+		</div>
+	</div>
 
     </div> <!-- /container -->
  </b:base>
